@@ -1,0 +1,149 @@
+﻿<Window x:Class="RNG_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RNG_Project"
+        mc:Ignorable="d"
+        Title="R N G" Height="450" Width="800">
+
+    <Grid Background="WhiteSmoke">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0"
+               FontSize="40" 
+               HorizontalAlignment="Center"
+               VerticalContentAlignment="Center"
+               >Random Number Generator</Label>
+
+        <Label Grid.Row="1"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 FontSize="20"
+                 Margin="30, 0, 0, 0">
+            Number digit(s):
+        </Label>
+        <Label     Name="Result"
+                   Background="White"
+                   ToolTip="Number will appear here"
+                   Grid.Row="2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   BorderThickness="1"
+                   BorderBrush="Black"
+                   FontSize="20"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center"
+                   Height="50" Width="150"/>
+
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="0, 35, 0, 0">
+            <RadioButton x:Name="oneDigit"
+                     Content="1" 
+                     IsChecked="False"
+                     HorizontalAlignment="Left"
+                     Margin="0,0,50,0" 
+                     VerticalAlignment="Top">
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+            <RadioButton x:Name="twoDigits" 
+                     Content="2" 
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Margin="0,0,50,0">
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+
+            <RadioButton x:Name="threeDigits" 
+                     Content="3" 
+                     IsChecked="True"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Margin="0,0,50,0" >
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+
+            <RadioButton x:Name="fourDigits" 
+                     Content="4" 
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top" 
+                     Margin="0,0,50,0" >
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+
+            <RadioButton x:Name="fiveDigits" 
+                     Content="5" 
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Margin="0,0,50,0" >
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+
+            <RadioButton x:Name="sixDigits" 
+                     Content="6" 
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Margin="0,0,50,0" >
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+            <Button Content="Generate"
+                    ToolTip="Generate the number"
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top"
+                Click="Button_Click_1"
+                FontSize="20"
+                Grid.Row="3"
+                Height="40" Width="96" 
+                Margin="0,5,0,0"/>
+
+            <Button Content="Copy"
+                    Background="White"
+                    ToolTip="Click to copy"
+                Grid.Row="3"
+                FontSize="15"
+                Width="95" Height="30"
+                Margin="0, 10, 0, 0 " Click="Button_Click">
+            </Button>
+
+
+        </StackPanel>
+       
+
+
+
+
+
+
+
+    </Grid>
+
+
+</Window>
