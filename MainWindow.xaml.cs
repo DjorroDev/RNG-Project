@@ -63,6 +63,16 @@ namespace RNG_Project
                 n = r.Next(100000, 999999);
                 Result.Content = n.ToString();
             }
+            else if (sevenDigits.IsChecked == true)
+            {
+                n = r.Next(1000000, 9999999);
+                Result.Content = n.ToString();
+            }
+            else if (eightDigits.IsChecked == true)
+            {
+                n = r.Next(10000000, 99999999);
+                Result.Content = n.ToString();
+            }
         }
 
         //copying to clipboard
